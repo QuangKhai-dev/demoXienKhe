@@ -1,0 +1,35 @@
+.banner {
+  .carousel .slider-wrapper {
+    height: 460px;
+    .slide {
+      height: 460px;
+      & div {
+        height: 100%;
+      }
+    }
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+@media (max-width: 1279.98px) {
+  .banner {
+    .carousel .slider-wrapper {
+      height: 300px;
+      .slide {
+        height: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .banner {
+    .carousel .slider-wrapper {
+      height: 150px;
+      .slide {
+        height: 150px;
+      }
+    }
+  }
+}

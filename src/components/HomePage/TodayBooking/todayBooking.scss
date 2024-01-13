@@ -1,0 +1,127 @@
+.section-today-booking {
+  background-image: url("../../../assets/image/outside/bg-booking.jpeg");
+  background-size: cover;
+  width: 100%;
+  .bg-layer {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(237, 241, 244, 0.9) 50%,
+      rgba(11, 17, 33, 0) 50%,
+      black 50%,
+      rgba(0, 0, 0, 0.71) 100%
+    );
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .newFoods {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .food-item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px dashed gray;
+
+    img {
+      object-fit: cover;
+      width: 120px;
+      height: 80px;
+      border-radius: 10px;
+    }
+    .foodName,
+    .price {
+      color: #332e2a;
+      font-weight: 500;
+      text-transform: uppercase;
+      align-self: center;
+    }
+    .price {
+      flex-grow: 1;
+      text-align: end;
+      padding-right: 40px;
+    }
+  }
+  .booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ul {
+      li {
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+    }
+  }
+}
+@media (max-width: 1279.98px) {
+  .section-today-booking {
+    .food-item {
+      gap: 16px;
+      img {
+        min-width: 100px;
+        width: 100px;
+      }
+      .price {
+        min-width: 120px;
+        padding-right: 20px;
+      }
+    }
+    .booking {
+      margin-right: 0;
+    }
+  }
+}
+@media (max-width: 1023.98px) {
+  .section-today-booking {
+    .bg-layer {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(237, 241, 244, 0.9) 50%,
+        rgba(11, 17, 33, 0) 50%,
+        black 50%,
+        rgba(0, 0, 0, 0.71) 100%
+      );
+    }
+    .newFoods {
+      height: 850px;
+      padding-bottom: 80px;
+    }
+    .booking {
+      padding-top: 80px;
+      margin-left: 15px;
+      height: 850px;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .section-today-booking {
+    .bg-layer {
+      padding-top: 50px;
+      padding-bottom: 70px;
+    }
+    .newFoods,
+    .booking {
+      height: 650px;
+    }
+    .newFoods {
+      padding-bottom: 30px;
+    }
+    .food-item {
+      justify-content: space-between;
+      .foodName {
+        flex-grow: 1;
+      }
+      .price {
+        flex-grow: unset;
+      }
+    }
+    h5 {
+      text-align: center;
+    }
+  }
+}

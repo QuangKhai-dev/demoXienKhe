@@ -1,0 +1,34 @@
+.section-navbar {
+  width: 220px;
+  min-width: 220px;
+  background: #000;
+  padding-bottom: 20px;
+  .text-foreground,
+  svg {
+    color: whitesmoke;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  .menuDistrict {
+    h2 {
+      button {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .menuTypeItem {
+    color: whitesmoke;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 4px;
+    &[aria-selected="true"] {
+      background-color: gray !important;
+      color: whitesmoke;
+    }
+    svg {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+@layer components {
+  .paddingYSection {
+    @apply py-10;
+  }
+}
+
+:root {
+  --yellow-color: #fec100;
+  --blue-color: #1458a5;
+  --red-color: #a7141d;
+}
+.text-yl {
+  color: var(--yellow-color);
+}
+.text-bl {
+  color: var(--blue-color) !important;
+}
+.text-rd {
+  color: var(--red-color) !important;
+}
+.bg-rd {
+  background-color: var(--red-color);
+  color: whitesmoke;
+}
+.l-container {
+  width: 100%;
+  max-width: 1440px;
+  @apply mx-auto px-5;
+}
+
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1.3;
+  font-family: "Roboto Slab", serif;
+}
+h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.3;
+  font-family: "Roboto Slab", serif;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: #a7141d;
+}
+h5 {
+  font-size: 19px;
+}
+
+.section {
+  width: 100%;
+}
+
+.main-btn {
+  background: var(--red-color);
+  color: white;
+  border-radius: 30px;
+  padding: 11px 50px;
+  min-width: 170px;
+  font-weight: 500;
+  display: inline-block;
+}
+@media (max-width: 1279.98px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1023.98px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 31px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .main-btn {
+    padding: 5px 10px;
+    min-width: 126px;
+  }
+}

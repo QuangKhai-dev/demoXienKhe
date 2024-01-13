@@ -1,0 +1,97 @@
+#bookingResForm{
+    header {
+        padding-bottom: 10px !important;
+        border-bottom: 1px dashed #b8b8b8;
+        margin-bottom: 10px;
+      }
+      .modal-header {
+        h5 {
+          font-weight: 500;
+          font-size: 25px;
+          margin-bottom: 10px;
+          color: #a7141d;
+        }
+        .res-add {
+          color: #7a7a7a;
+        }
+        .res-phone {
+          color: #1458a5;
+        }
+       
+      }
+      .modal-body {
+        .py-2 {
+          height: max-content;
+          padding: 15px;
+        }
+        label {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .box-border {
+          input,
+          textarea,
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+      footer {
+        background-color: #fff;
+        padding-top: 16px !important;
+        border-top: 1px dashed #b8b8b8;
+        margin-top: 10px;
+        .btn-submit {
+          background-color: #f0b71cb6;
+          color: #000;
+          border-radius: 6px;
+          padding: 5px 15px;
+          border: none;
+          width: 110px;
+          font-size: 15px;
+        }
+}
+
+  .btn-cancel{
+    background-color: #fff;
+    border: 1px solid silver;
+    color: #7a7a7a;
+    padding: 5px 15px;
+    border-radius: 6px;
+    width: 110px;
+    font-size: 15px;
+
+  }
+}
+.input-container input {
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

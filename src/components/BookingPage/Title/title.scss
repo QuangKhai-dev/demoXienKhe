@@ -1,0 +1,44 @@
+.section-title {
+  padding: 50px 0;
+  background-color: #000;
+  color: white;
+  .l-container {
+    padding-right: 0;
+  }
+  h2 {
+    height: max-content;
+    overflow: visible;
+    margin-bottom: 10px;
+    span {
+      &.hight-light {
+        background-color: #fec002;
+        padding: 10px;
+        border-radius: 6px;
+        color: #000;
+      }
+    }
+  }
+  h3 {
+    color: whitesmoke;
+  }
+}
+@media (max-width: 1279.98px) {
+  .section-title {
+    .l-container {
+      padding-right: 20px;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .section-title {
+    padding-bottom: 20px;
+    h2 {
+      font-size: 23px;
+      span {
+        &.hight-light {
+          padding: 3px;
+        }
+      }
+    }
+  }
+}

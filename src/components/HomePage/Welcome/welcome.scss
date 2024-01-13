@@ -1,0 +1,55 @@
+.section-welcome {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .bg-black {
+    border-radius: 20px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .image_branch {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: fill;
+    }
+  }
+}
+@media (max-width: 1279.98px) {
+  .section-welcome {
+    .bg-black {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}
+@media (max-width: 1023.98px) {
+  .section-welcome {
+    .welcome_item {
+      .address {
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .section-welcome {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .bg-black {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .image_branch {
+      img {
+        width: 80%;
+        min-width: 100px;
+        height: auto !important;
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+}
